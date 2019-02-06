@@ -4,23 +4,22 @@
   "description": "simple react project setup",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production",
+    "start": "nodemon server/server.js",
+    "build": "webpack -d --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Benny Wu",
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
-    "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14"
+    "webpack-cli": "^3.2.1"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
